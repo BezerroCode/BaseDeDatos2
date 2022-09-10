@@ -23,7 +23,8 @@ from estudiantes as est;
 INSERT INTO estudiantes (nombres, apellidos, edad, fono, email, direccion, genero) VALUES
     ('Miguel' ,'Gonzales Veliz', 20, 2832115, 'miguel@gmail.com', 'Av. 6 de Agosto', 'masculino'),
     ('Sandra' ,'Mavir Uria', 25, 2832116, 'sandra@gmail.com', 'Av. 6 de Agosto', 'femenino'),
-    ('Miguel' ,'Gonzales Veliz', 20, 2832115, 'Joel' ,'Adubiri Mondar', 30, 2832117, 'joel@gmail.com', 'Av. 6 de Agosto', 'masculino'),
+    ('Miguel' ,'Gonzales Veliz', 20, 2832115,'miguel@gmail.com', 'Av. 6 de Agosto','masculino'),
+     ('Joel' ,'Adubiri Mondar', 30, 2832117, 'joel@gmail.com', 'Av. 6 de Agosto', 'masculino'),
     ('Andrea' ,'Arias Ballesteros', 21, 2832118, 'andrea@gmail.com', 'Av. 6 de Agosto', 'femenino'),
     ('Santos' ,'Montes Valenzuela', 24, 2832119, 'santos@gmail.com', 'Av. 6 de Agosto', 'masculino');
 
