@@ -223,6 +223,9 @@ select est.nombres,est.apellidos
 from estudiantes as est
 where get_avg_est_v1('masculino') % 2 = 0;
 
+select Concat('dba',' ','s')
+select CONCAT_WS('-','dba','s','FG')
+select TRIM('       DBA II    ');
 #concatenar
 select CONCAT(est.nombres, ' ', est.apellidos) as Persona
 from estudiantes as est;
@@ -289,6 +292,76 @@ select est.nombres,est.apellidos,est.edad
 from estudiantes as est
 where concat(nombres, ' ', apellidos, '',edad) and getNombreCompleto_v2('masculino') % 2 = 2;
 
+#GENERAR EL SEGUIENTE FORMATO DE SALIDA
+create or replace function getLista(par1 varchar(25),par2 varchar(25))
+    returns varchar(50)
+    begin
+        declare nombreCompleto varchar (50) default '';
+        set nombreCompleto = concat_ws(':','nombres','apellidos') or CONCAT_WS(',',par1,par2);
+        return  nombreCompleto;
+    end;
+
+create or replace function getLista1(par3 varchar(25),par4 varchar(25))
+    returns varchar(50)
+    begin
+        declare nombreCompleto varchar (50) default '';
+        set nombreCompleto = concat_ws(':','gestion','edad') or CONCAT_WS('-',par3,par4);
+        return  nombreCompleto;
+    end;
 
 
+select getLista('William', 'Barra'), getLista1('20','2022')
 
+#generar el seguientre formato de salida
+#concatenar nombres y apellidos de la seiguiente forma: Nombres: William, Apellidos: Barrra
+#concatenar gestion y edad de la seiguiente forma: Gestion:2022 -  edad: 10
+
+CREATE function output_fullname(nombres VARCHAR(20), apellidos varchar(20))
+    RETURNS VARCHAR(100)
+begin
+    declare resultado VARCHAR(100) DEFAULT '';
+    set resultado = concat('Nombres: ', nombres, ', Apellidos: ', apellidos);
+    return resultado;
+end;
+
+SELECT output_fullname('William', 'Barra');
+SELECT output_fullname(est.nombres, est.apellidos) as fullname
+from estudiantes as est;
+
+CREATE or replace function output_age(gestion integer, edad integer)
+    RETURNS integer
+begin
+    declare resultado varchar(100) default '';
+    set resultado = concat('Gestion: ', gestion, '- edad(',edad,')');
+    return resultado;
+end;
+
+select output_fullname('William','Barra'), output_age(20,2022) from estudiantes as est
+
+select output_fullname(est.nombres,est.apellidos),
+       output_age(est.gestion,est.edad)
+from estudiantes as est
+
+CREATE function output_datos(nombres VARCHAR(20), apellidos varchar(20),gestion integer, edad integer)
+    RETURNS VARCHAR(100)
+begin
+    declare resultado VARCHAR(100) DEFAULT '';
+    set resultado = concat('Nombres: ', nombres, ', Apellidos: ', apellidos,'Gestion: ', gestion, '- edad(',edad,')');
+    return resultado;
+end;
+
+select output_datos(est.nombres,est.apellidos,est.gestion,est.edad)
+from estudiantes as est;
+
+
+#nombres y apelludos que estn inscritos en la gestion 2015 Y ARQ-101 y inscritos en 5to semestres ademas de la gesion 2016 y 2017
+select est.nombres, est.apellidos,ins.gestion
+from estudiantes as est
+inner join inscripcion as ins on est.id_est = ins.id_est
+where ins.gestion=2016 or ins.gestion=2017;
+
+select est.nombres, est.apellidos,ins.gestion
+from estudiantes as est
+inner join materias as mat on est.id_est = mat.id_mat
+inner join inscripcion as ins on mat.id_mat = ins.id_est
+where ins.gestion = 2015 and mat.cod_mat='ARQ-101' and ins.semestre='5to Semestre' or ins.gestion=2016 or ins.gestion=2017;
