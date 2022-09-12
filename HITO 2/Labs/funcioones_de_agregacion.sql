@@ -2,7 +2,7 @@
 #avg max min
     #count
     #sum devolver la suma de todos los valores d eun campo
-CREATE DATABASE function_aggregation;
+CREATE DATABASE function_agregation;
 
 CREATE TABLE estudiantes
 (
