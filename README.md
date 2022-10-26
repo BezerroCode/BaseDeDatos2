@@ -1,11 +1,9 @@
 <h1 align="center"> PORTAFOLIO BASE DE DATOS II  </h1>
-<p align="center">  </p>
-<img align="right" src="https://www.cloudsigma.com/wp-content/uploads/Feature-MariaDB-MySQL-Auto-%D0%A1lustering-with-Load-Balancing-and-Replication-for-High-Availability-and-Performance-1163x590.jpg" height="400" width="900">
+
+<img align="right" src="https://www.cloudsigma.com/wp-content/uploads/Feature-MariaDB-MySQL-Auto-%D0%A1lustering-with-Load-Balancing-and-Replication-for-High-Availability-and-Performance-1163x590.jpg" height="400" width="1000">
 
 
-</p>
-<h1 align="center">PORTAFOLIO</h4>
-<p align="center">
+<h1 align="center"> PORTAFOLIO</h1>
 
 ![snake gif](https://raw.githubusercontent.com/avinash-218/avinash-218/output/github-contribution-grid-snake.svg)
 
