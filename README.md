@@ -6,7 +6,6 @@
 </p>
 <h1 align="center">PORTAFOLIO</h4>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/demo.gif" alt="Demo" width="800" />
 
 ![snake gif](https://raw.githubusercontent.com/avinash-218/avinash-218/output/github-contribution-grid-snake.svg)
 
