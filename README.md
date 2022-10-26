@@ -10,8 +10,9 @@
 
 ![snake gif](https://raw.githubusercontent.com/avinash-218/avinash-218/output/github-contribution-grid-snake.svg)
 
-<h1 align="center">HITO 2</h4>
-- 📝 Repositorio del  [Hito 3](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%202)
+
+## ➤ HITO 2 FUNCTIONS
+- 📝 Repositorio del  [Hito 2](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%202)
 
 
 
