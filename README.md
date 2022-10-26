@@ -1,6 +1,6 @@
 <h1 align="center"> PORTAFOLIO BASE DE DATOS II  </h1>
 <p align="center">  </p>
-<img align="right" src="https://www.cloudsigma.com/wp-content/uploads/Feature-MariaDB-MySQL-Auto-%D0%A1lustering-with-Load-Balancing-and-Replication-for-High-Availability-and-Performance-1163x590.jpg" height="400" width="1000">
+<img align="right" src="https://www.cloudsigma.com/wp-content/uploads/Feature-MariaDB-MySQL-Auto-%D0%A1lustering-with-Load-Balancing-and-Replication-for-High-Availability-and-Performance-1163x590.jpg" height="400" width="900">
 
 
 </p>
