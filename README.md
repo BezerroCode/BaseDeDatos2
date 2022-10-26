@@ -174,21 +174,6 @@ select count(b.id_book)
     from book as b
     inner join prestamos p on b.id_book = p.id_book
 where p.fec_prestamo like '2018%'
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-BaseDeDatos2/HITO 2 at main · FreddyMachaca/BaseDeDatos2
 ```
 
 
