@@ -8,12 +8,15 @@
 ![snake gif](https://raw.githubusercontent.com/avinash-218/avinash-218/output/github-contribution-grid-snake.svg)
 
 
-## ➤ HITO 2 FUNCTIONS
+## ➤ HITO 2 
+## ➤ FUNCTIONS
 - 📝 Repositorio del  [Hito 2](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%202)
+### [LABORATORIOS](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%202/Labs)
+### [EVALUACION PROCESUAL](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%202/Procesual) 
+### [EVALUACION](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%202/Examen) 
 
 
-
-## ➤ Code SQL Functions
+## ➤ Code SQL 
 
 ```javascript
 create database hito2
@@ -175,9 +178,14 @@ where p.fec_prestamo like '2018%'
 
 
 
-## ➤ HITO 3 FUNCTIONS
+## ➤ HITO 3  
+##  MANEJOS DE ESTRUCTURAS DE CONTROL
 - 📝 Repositorio del  [Hito 3](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%203)
+### [LABORATORIOS](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%203/LABS)
+### [EVALUACION PROCESUAL](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%203/PROCESUAL) 
+### [EVALUACION](https://github.com/FreddyMachaca/BaseDeDatos2/tree/main/HITO%203/EXAMEN) 
 
+## ➤ Code SQL  
 ```javascript
 create database defensa_hito3_2022;
 use defensa_hito3_2022;
