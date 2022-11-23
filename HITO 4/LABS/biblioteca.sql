@@ -179,3 +179,28 @@ where au.nacionality = 'boliviana' or au.nacionality = 'argentina';
 
 select bu.*
     from bookAndUser as bu;
+
+create table auditoria_autor(
+    operation char(1) not null,
+    stamp TIMESTAMP not null,
+    userid text not null,
+    hostname text not null,
+
+    #columnas adiconales de la tabla autor
+    type text not null,
+    id_book text not null
+);
+
+create or replace trigger auditoria_category
+before update on category
+for each row
+    begin
+        declare typeCat text default '';
+        declare idBookCat text default '';
+
+        set typeCat = new.type;
+        set idBookCat = new.id_book;
+
+        insert into auditoria_autor(operation, stamp, userid, hostname, type, id_book)
+            select  'U', now(), user(), @@hostname, typeCat, idBookCat;
+    end;
